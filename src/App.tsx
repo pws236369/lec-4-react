@@ -31,7 +31,10 @@ function App() {
         ))}
       </div>
       <h1>Vite + React</h1>
-      <h2>Counter: {count}</h2>
+      {
+        // Rendring only if the count is greater than 0
+        count > 0 && <h2>Counter: {count}</h2>
+      }
       <Counter handleClick={handleClick} />
     </>
   );
