@@ -3,6 +3,7 @@ interface CounterProps {
 }
 
 export const Counter: React.FC<CounterProps> = ({ handleClick }) => {
+
   // JSX - Rendered output
   return (
     <div className="card">

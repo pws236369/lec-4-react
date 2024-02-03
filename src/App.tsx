@@ -12,7 +12,17 @@ function App() {
   // Event handler function
   const handleClick = () => {
     console.log('Click happened');
-    setCount((count) => count + 1);
+    // Waht will be the value of count after clicking the button?
+    setCount(count + 1); // 0 + 1 = 1
+    setCount(count + 1);
+    setCount(count + 1);
+
+    // Fix:
+    /*
+    setCount((prevCount) => prevCount + 1); // This will work as expected
+    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => prevCount + 1);
+    */
   };
   return (
     <>
